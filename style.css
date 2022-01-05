@@ -1,0 +1,265 @@
+a, li, p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* background-color: #dbbcac; */
+    background: rgb(251, 239, 231);
+    background: radial-gradient(circle, rgb(252, 216, 200) 0%, rgba(219, 188, 172, 1) 100%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.container {
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBEFE7;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav a {
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    text-decoration: 1px underline red;
+}
+
+.aside-main-container {
+    /* height: 100%; */
+    display: flex;
+}
+
+
+
+h1 {
+    letter-spacing: 0.1em;
+    font-family: 'Biryani', sans-serif;
+}
+
+main {
+    background-color: #FBEFE7;
+    min-height: 10em;
+    flex: 4;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-bottom: 2%;
+    -webkit-box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+}
+
+.main-menu {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.main-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-paragraphe-description {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-style: italic;
+    text-align: center;
+}
+
+.underline {
+    font-weight: bold;
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.main-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-images img {
+    max-height: 250px;
+    width: 400px;
+    object-fit: cover;
+    margin: 1%;
+    border-radius: 1%;
+    transition: 400ms;
+}
+
+.main-images img:hover {
+    transform: scale(1.02);
+    -webkit-box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+}
+
+.tel img {
+    height: 20px;
+    margin-right: 1.1em;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+}
+
+.mail img {
+    height: 20px;
+    margin-right: 1.1em;
+}
+
+aside {
+    background-color: #FBEFE7;
+    height: 40%;
+    flex: 1;
+    margin-right: 4%;
+    -webkit-box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside section article {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.underlined {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.underlined::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 1px solid red;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.card-img {}
+
+.card-bottom {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: grey;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.avis {
+    background-color: #FBEFE7;
+    margin-top: 5%;
+    min-height: 10em;
+    margin-left: 4%;
+    margin-right: 4%;
+    -webkit-box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avis-card {
+    background-color: #E4C3B3;
+    min-height: 1em;
+    max-width: 15em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1em;
+    border-radius: 5%;
+}
+
+.avis-name {
+    
+}
+
+.avis-description {
+
+}
