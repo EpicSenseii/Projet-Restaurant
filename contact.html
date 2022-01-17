@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/pngegg.png">
     <link href="https://fonts.googleapis.com/css2?family=Biryani&family=Exo:wght@300&family=Yrsa&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Ramyeon</title>
 </head>
 
@@ -23,12 +24,23 @@
             </h1>
         </header>
 
-        <nav>
+        <nav class="nav-desktop">
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="/menu.html">Menu</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
+        <button class="hamburger">
+            <i class="menuIcon material-icons">menu</i>
+            <i class="closeIcon material-icons">close</i>
+        </button>
+        <nav class="nav-mobile">
+            <ul class="ul-mobile">
+                <li class="li-mobile"><a href="/index.html">Accueil</a></li>
+                <li class="li-mobile"><a href="/menu.html">Menu</a></li>
+                <li class="li-mobile"><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -70,6 +82,7 @@
             <p>Ramyeon&copy 2022</p>
         </footer>
     </div>
+    <script src="/script.js"></script>
 </body>
 
 </html>

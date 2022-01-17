@@ -28,6 +28,10 @@ header {
     background-color: #FBEFE7;
 }
 
+.nav-mobile {
+    display: none;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -254,12 +258,92 @@ footer {
     flex-wrap: wrap;
     margin: 1em;
     border-radius: 5%;
+    -webkit-box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
 }
 
-.avis-name {
-    
+.hamburger {
+    display: none;
 }
 
-.avis-description {
+.avis-name {}
 
+.avis-description {}
+
+@media screen and (max-width: 600px) {
+
+    .aside-main-container {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-left: 2%;
+    }
+
+    main {
+        background-color: #FBEFE7;
+        min-height: 10em;
+        flex: 1;
+        /* margin-left: 4%;
+        margin-right: 4%; */
+        padding-bottom: 2%;
+        -webkit-box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+        box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    }
+
+    .main-menu {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+    .nav-mobile {
+        display: flex;
+        position: fixed;
+        transform: translateY(-200%);
+        transition: 700ms;
+        z-index: 99;
+    }
+
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 7rem;
+        right: 1rem;
+        padding: 4px;
+        border: black solid 1px;
+        background: #FBEFE7;
+        border-radius: 5%;
+        cursor: pointer;
+        display: block;
+    }
+
+    .closeIcon {
+        visibility: hidden;
+    }
+
+    .ul-mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: #FBEFE7;
+        top: 30;
+        /* transform: translateY(-13%); */
+        padding-left: 4rem;
+        padding-right: 4rem;
+        border-radius: 5%;
+        -webkit-box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+        box-shadow: 5px 5px 15px -8px rgba(0, 0, 0, 0.81);
+    }
+
+    .li-mobile {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
 }
